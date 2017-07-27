@@ -1,0 +1,28 @@
+.sub .item{
+    padding: 30rpx 24rpx;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    background-color: #fff; 
+    margin-top: 20rpx;
+}
+.warn-title{
+   font-size: 24rpx;
+   color: #ff7c17;
+   margin-top: 8rpx;
+   text-align: center;
+}
+
+.submit{  
+  margin-top: 30rpx;
+}
+.other-button-hover{
+  background-color: #098aed;
+}
+
+.sub .item .item-area{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    height: 350rpx;
+    color: #1a1a1a;
+    width: 100%;
+}

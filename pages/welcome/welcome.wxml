@@ -1,0 +1,11 @@
+<view class="load">
+    <view class="loadicon">
+        <image src="../../images/icon-load.png"> </image>
+    </view>
+    <view class="slogan">
+        <image src="../../images/slogan.png"> </image>
+    </view>
+    <view class="loading">
+        <image src="../../images/loading.gif"> </image>
+    </view>
+</view>

@@ -1,0 +1,180 @@
+<view class="container" style="background-color:#fff;">
+
+<!-- search -->  
+<form  bindsubmit="search">
+   <view class="searchfor flex-wrp">
+      <view class="position flex-wrp">
+          <text class="search-position">武汉</text>
+          <image src="../../images/position_down.png"></image> 
+      </view>
+      <view class="search-inp flex-wrp"> 
+          <icon class="session-search-icon" type="search" size="12"></icon> 
+          <view class="section">
+            <input placeholder="请输入标签或关键字" type="text" confirm-type="search" bindfocus></input>  
+          </view> 
+      </view>  
+      </view>
+</form>
+
+<!--result 昵称-->
+<view class="border-unline"></view>
+<view class="result"> 
+  <view class="result-title"><text>昵称</text></view>
+  <!--搜索结果1-->
+  <view class="flex-wrp">
+      <view class="avatar">
+          <image src="../../images/icon8.jpg"></image>
+      </view>
+      <view class="result-text">
+          <view class="text-row">
+              <view class="flex-wrp text-column">
+                <view class="username">
+                    <text>龙文字d123#</text>
+                </view>
+                <view class="usertitle flex-wrp">
+                    <image src="../../images/zhiwei.png"></image>
+                    <text>运营经理</text>
+                </view>
+              </view>
+              <!--<block wx:if="{{tag != null && tag != ''}}">-->
+                  <view class="description text-column">
+                      <text>微商</text>
+                      <text>招代理</text>
+                  </view>
+              <!--</block>-->
+          </view>
+          <view class="friend"  data-id="{{id}}" catchtap="add">
+              <image src="../../images/friend.png"></image>
+          </view>
+      </view>
+  </view>
+  <!--搜索结果2-->
+  <view class="flex-wrp">
+      <view class="avatar">
+          <image src="../../images/icon8.jpg"></image>
+      </view>
+      <view class="result-text" style="border-bottom:none;">
+          <view class="text-row">
+              <view class="flex-wrp text-column">
+                <view class="username">
+                    <text>龙文字d123#</text>
+                </view>
+                <view class="usertitle flex-wrp">
+                    <image src="../../images/zhiwei.png"></image>
+                    <text>运营经理</text>
+                </view>
+              </view>
+              <!--<block wx:if="{{tag != null && tag != ''}}">-->
+                  <view class="description text-column">
+                      <text>微商</text>
+                      <text>招代理</text>
+                  </view>
+              <!--</block>-->
+          </view>
+          <view class="friend"  data-id="{{id}}" catchtap="add">
+              <image src="../../images/friend.png"></image>
+          </view>
+      </view>
+  </view>
+</view>
+<!--result 行业-->
+<view class="border-unline"></view>
+<view class="result"> 
+  <view class="result-title"><text>行业</text></view>
+  <!--搜索结果1-->
+  <view class="flex-wrp">
+      <view class="avatar">
+          <image src="../../images/icon8.jpg"></image>
+      </view>
+      <view class="result-text">
+          <view class="text-row">
+              <view class="flex-wrp text-column">
+                <view class="username">
+                    <text>龙文字d123#</text>
+                </view>
+                <view class="usertitle flex-wrp">
+                    <image src="../../images/zhiwei.png"></image>
+                    <text>运营经理</text>
+                </view>
+              </view>
+              <!--<block wx:if="{{tag != null && tag != ''}}">-->
+                  <view class="description text-column">
+                      <text>微商</text>
+                      <text>招代理</text>
+                  </view>
+              <!--</block>-->
+          </view>
+          <view class="friend"  data-id="{{id}}" catchtap="add">
+              <image src="../../images/friend.png"></image>
+          </view>
+      </view>
+  </view>
+  <!--搜索结果2-->
+  <view class="flex-wrp">
+      <view class="avatar">
+          <image src="../../images/icon8.jpg"></image>
+      </view>
+      <view class="result-text" style="border-bottom:none;">
+          <view class="text-row">
+              <view class="flex-wrp text-column">
+                <view class="username">
+                    <text>龙文字d123#</text>
+                </view>
+                <view class="usertitle flex-wrp">
+                    <image src="../../images/zhiwei.png"></image>
+                    <text>运营经理</text>
+                </view>
+              </view>
+              <!--<block wx:if="{{tag != null && tag != ''}}">-->
+                  <view class="description text-column">
+                      <text>微商</text>
+                      <text>招代理</text>
+                  </view>
+              <!--</block>-->
+          </view>
+          <view class="friend"  data-id="{{id}}" catchtap="add">
+              <image src="../../images/friend.png"></image>
+          </view>
+      </view>
+  </view>
+</view>
+<!--result 职位-->
+<view class="border-unline"></view>
+<view class="result"> 
+  <view class="result-title"><text>职位</text></view>
+  <!--搜索结果-->
+  <view class="flex-wrp">
+      <view class="avatar">
+          <image src="../../images/icon8.jpg"></image>
+      </view>
+      <view class="result-text" style="border-bottom:none;">
+          <view class="text-row">
+              <view class="flex-wrp text-column">
+                <view class="username">
+                    <text>龙文字d123#</text>
+                </view>
+                <view class="usertitle flex-wrp">
+                    <image src="../../images/zhiwei.png"></image>
+                    <text>运营经理</text>
+                </view>
+              </view>
+              <!--<block wx:if="{{tag != null && tag != ''}}">-->
+                  <view class="description text-column">
+                      <text>微商</text>
+                      <text>招代理</text>
+                  </view>
+              <!--</block>-->
+          </view>
+          <view class="friend"  data-id="{{id}}" catchtap="add">
+              <image src="../../images/friend.png"></image>
+          </view>
+      </view>
+  </view>  
+</view>
+<!--result 我需要-->
+<view class="border-unline"></view>
+<!--result 我能提供-->
+<!--result 关于合作-->
+<!--result 自我描述标签-->
+
+</view>

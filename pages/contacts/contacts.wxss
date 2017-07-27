@@ -1,0 +1,64 @@
+/**index.wxss**/
+@import "../template/useritem/useritem.wxss";
+
+.nav-tab{
+  width: 662rpx;
+  height: 88rpx;
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.nav-tab .default{
+  font-size: 30rpx;
+  color: #1a1a1a;
+  text-align: center;
+  height: 82rpx;
+  line-height:82rpx;
+  margin-bottom: 1rpx;
+  display:inline-block;
+  padding-right:30rpx;
+  padding-left:30rpx;
+}
+
+.nav-tab .active{
+  border-bottom: #0a95ff 5rpx solid;
+}
+
+.section{
+  border-top: 1rpx solid #e5e5e5;
+}
+.section .userinfo .friend image{
+  display: none;
+}
+
+.section .nopep{
+  width: 318rpx;
+  height: 29rpx;
+  margin-left: 229rpx;
+  margin-top: 120rpx;
+  margin-bottom: 120rpx;
+}
+
+.plusgroup image{
+  height: 32rpx;
+  width: 32rpx;
+}
+.plusgroup{
+  align-items: center;
+  height: 84rpx;
+  padding: 0 32rpx;
+  background-color: #fff;
+  border-bottom: #fff 5rpx solid;
+  display: flex;
+}
+.nav-box{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}

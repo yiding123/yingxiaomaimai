@@ -1,0 +1,13 @@
+<view class="sub">
+  <form bindsubmit="add">
+    <view class="item">
+      <input class="item-value" name="job" type="text" maxlength="15" placeholder="不能超过15个字符" value="{{job}}"/>
+    </view>
+
+    <!-- 提交 -->
+    <view class="submit">
+      <button class="btn" hover-class="other-button-hover" formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">保存</button>
+    </view>
+
+  </form>
+</view>

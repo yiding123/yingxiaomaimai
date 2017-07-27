@@ -1,0 +1,118 @@
+.userinfo .avatar image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.userinfo .usertext {
+  height: 54rpx;
+  align-items: center;
+}
+
+.userinfo .username {
+  width: 250rpx;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 20rpx;
+}
+
+.userinfo .usertitle {
+  height: 54rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.userinfo .usertitle text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 54rpx;
+  align-items: center;
+  color: #ff7c17;
+  font-weight: nomal;
+  font-size: 24rpx;
+}
+
+.userinfo .usertitle image {
+  width: 12rpx;
+  height: 18rpx;
+  align-items: center;
+  margin-right: 8rpx;
+}
+
+.userinfo .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-items: center;
+  width: 550rpx;
+  height: 54rpx;
+}
+
+.userinfo .description text {
+  max-width: 290rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 10rpx;
+  background-color: #f7f7f7;
+  border-radius: 30rpx;
+  padding: 4rpx 14rpx;
+  border: 1rpx solid #ebebeb;
+  color: #666;
+  font-size: 24rpx;
+  display: inline-block;
+}
+
+.userinfo {
+  /*border-bottom: 1rpx solid #eee;*/
+  height: 148rpx;
+  background-color: #fff;
+}
+
+.userinfo .avatar {
+  align-items: center;
+  width: 100rpx;
+  height: 100rpx;
+  padding: 24rpx 0;
+  margin: 0 20rpx 0 24rpx;
+}
+
+.userinfo .friend {
+  height: 147rpx;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  padding-left: 10rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  position:relative;
+}
+
+.userinfo .friend image {
+  width: 42rpx;
+  height: 41rpx;
+  position: absolute;
+  right: 40rpx;
+  top:53rpx;
+}
+
+
+.flex-wrp {
+  display: flex;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  width: 606rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  padding: 20rpx 0;
+}

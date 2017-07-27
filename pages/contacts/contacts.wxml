@@ -1,0 +1,23 @@
+<!--contacts.wxml-->
+<import src="../template/recommend/recommend-templ.wxml" />
+<import src="../template/useritem/useritem.wxml" />
+
+      
+  <!-- nav tab -->
+<view class="nav-box">
+  <view class="nav-tab">
+     <scroll-view class="scroll-view_H" scroll-x="true" style="white-space:nowrap; display:flex;">     
+        <view data-id="{{group.id}}" data-groupname="{{group.groupname}}" wx:for="{{groups}}" wx:for-item="group" bindtap="filter"  class="default {{group.selected == 1?'active':''}}">{{group.groupname}}</view>
+     </scroll-view>   
+  </view>
+  <view class="plusgroup" catchtap="add">
+    <image src="../../images/plusgroup.png"></image>
+  </view> 
+</view>
+
+<view class="section">
+   <image hidden="{{hide}}" class="nopep" src="../../images/nopep.png"></image>
+   <navigator hover-class="navigator-hover" wx:for="{{feed}}" wx:for-item="item">
+      <template is="useritem-templ" data="{{...item}}"></template>
+   </navigator>
+</view>

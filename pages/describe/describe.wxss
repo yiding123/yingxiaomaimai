@@ -1,0 +1,39 @@
+.tags-all{
+  font-size: 28rpx;
+  color: #666666;
+  padding: 6rpx 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 42rpx;
+  margin-right: 24rpx;
+  margin-top: 24rpx;
+  display: inline-block;
+}
+
+.checked .tags-selected,.tags-box .tags-selected{
+  color: #0a95ff;
+  border-color: #0a95ff;
+}
+.checked{
+  padding: 9rpx 0 29rpx 24rpx;
+  border-bottom:1rpx solid #e5e5e5; 
+
+}
+
+.tag-title{
+  margin-top: 40rpx;
+  margin-left: 24rpx;
+  color: #999999;
+}
+
+.tags-box{
+  padding: 0 24rpx;
+}
+
+.tags-all image{
+  width: 16rpx;
+  height: 16rpx;
+  margin-top: 6rpx;
+  margin-left: 10rpx;
+}

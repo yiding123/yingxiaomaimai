@@ -1,0 +1,25 @@
+<view class="container" style="background-color:#f7f7f7;">
+
+<!-- search -->  
+<form  bindsubmit="search">
+   <view class="searchfor flex-wrp">
+      <view class="position flex-wrp">
+          <text class="search-position">武汉</text>
+          <image src="../../images/position_down.png"></image> 
+      </view>
+      <view class="search-inp flex-wrp"> 
+          <icon class="session-search-icon" type="search" size="12"></icon> 
+          <view class="section">
+            <input placeholder="请输入标签或关键字" type="text" confirm-type="search" bindfocus></input>  
+          </view> 
+      </view>  
+      </view>
+</form>
+
+<!--noresult-->
+<view class="noresult">
+  <text>没有符合条件的用户</text>
+</view>
+
+
+</view>

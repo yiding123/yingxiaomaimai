@@ -1,0 +1,25 @@
+.load{
+    background-color: #fff;
+    height: 100%;
+}
+.loadicon image{
+    width: 254rpx;
+    height: 244rpx;   
+    margin-top: 200rpx;
+}
+.slogan image{
+    width: 376rpx;
+    height: 44rpx;
+    margin-top: 42rpx;
+}
+.loadicon,.slogan{
+    text-align: center;  
+}
+.loading{
+    text-align: center; 
+    margin-top: 200rpx; 
+}
+.loading image{
+    width: 100rpx;
+    height: 100rpx;
+}

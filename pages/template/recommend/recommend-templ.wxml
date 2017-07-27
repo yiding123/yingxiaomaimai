@@ -1,0 +1,12 @@
+<template name="recommend-template">
+  <view class="recommend-wrapper" catchtap="details" data-id="{{id}}">
+    <view class="recommend-content">
+      <view class="poster"><image src="{{avatar}}"></image></view>
+      <view class="name">{{name}}</view>
+      <view class="wish-write">
+        <image src="../../images/good.png" mode="{{item.mode}}"></image>
+        <text>{{reason}}</text>
+      </view>
+    </view>
+  </view>
+</template>

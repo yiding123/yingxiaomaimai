@@ -1,0 +1,31 @@
+<view class="container" style="background-color:#fff;">
+  <!-- search -->
+  <form bindsubmit="search">
+    <view class="searchfor flex-wrp">
+      <view class="search-inp flex-wrp">
+        <icon class="session-search-icon" type="search" size="12"></icon>
+        <input placeholder="请输入标签或关键字" type="text" name="search" confirm-type="search" bindfocus></input>
+      </view>
+      <button form-type="submit" plain="true" class="ser-btn" type="default" hover-class="other-button-hover">搜索</button>
+    </view>
+  </form>
+  <!-- hot tag -->
+  <view class="manage">
+    <view class="manage-hd">
+      <text class="manage-title">热门标签</text>
+    </view>
+    <view class="manage-bd">
+      <view hover-class="hover" class="manage-tag" wx:for="{{hot}}" wx:for-item="hottag" catchtap="tagsearch" data-key="{{hottag}}">{{hottag}}</view>
+    </view>
+  </view>
+  <!-- last tag -->
+  <view class="manage">
+    <view class="manage-hd">
+      <text class="manage-title">历史搜索</text>
+      <text class="manage-tips" catchtap="clearhistory">清除</text>
+    </view>
+    <view class="manage-bd">
+      <view class="manage-tag" wx:for="{{history}}" wx:for-item="historytag" catchtap="tagsearch" data-key="{{historytag}}">{{historytag}}</view>
+    </view>
+  </view>
+</view>

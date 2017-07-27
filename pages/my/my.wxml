@@ -1,0 +1,43 @@
+
+<view class="container">
+  <view class="border"></view>
+  <view class="user flex-wrp" bindtap="mine">
+    <view class="avatar">
+      <image src="{{user.avatarUrl?user.avatarUrl:user.avatar}}"></image>
+    </view>
+    <view class="user-info">
+      <view class="text-row flex-wrp">
+          <view class="text-yh">{{user.nickName}}</view>
+          <view class="text-zw flex-wrp">
+              <image src="../../images/zhiwei.png"></image>
+              <text>{{user.industry}}</text>
+          </view>
+      </view>
+      <view class="text-bq"><text wx:for="{{tag}}" wx:key="index">{{item}}</text></view>     
+    </view>
+    <image class="edit" src="../../images/more-eye.png"></image>
+  </view>
+  <view class="border"></view>
+  <view class="my">
+    <navigator hover-class="navigator-hover" class="my-item" data-hide="0" bindtap="toAccess">    
+        <text class="myitem-name">谁看过我</text>
+        <image class="myitem-icon" src="../../images/more-eye.png"></image>
+        <view class="clearfix"></view>                 
+    </navigator>
+    <navigator hover-class="navigator-hover" class="my-item" data-hide="1" bindtap="toAccess">    
+        <text class="myitem-name">我看过谁</text>
+        <image class="myitem-icon" src="../../images/more-eye.png"></image>  
+        <view class="clearfix"></view>              
+    </navigator>
+        <navigator hover-class="navigator-hover" class="my-item" url="../follower/follower">    
+        <text class="myitem-name">我被谁收藏</text>
+        <image class="myitem-icon" src="../../images/more-eye.png"></image>  
+        <view class="clearfix"></view>              
+    </navigator>
+    <navigator hover-class="navigator-hover" class="my-item" bindtap="recommend" style="border:none;">
+        <text class="myitem-name">我要上推荐</text>
+        <image class="myitem-icon" src="../../images/more-eye.png"></image>  
+        <view class="clearfix"></view> 
+    </navigator>
+  </view>
+</view>

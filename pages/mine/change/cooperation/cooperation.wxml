@@ -1,0 +1,12 @@
+<view class="sub">
+    <form bindsubmit="add">
+        <view class="item">       
+            <textarea name="coperation" class="item-area" maxlength="150" placeholder="关于合作" value="{{coperation}}" />
+        </view>
+
+        <view class="submit">
+            <button class="btn" hover-class="other-button-hover" formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">提交</button>
+        </view>
+
+    </form>
+</view>

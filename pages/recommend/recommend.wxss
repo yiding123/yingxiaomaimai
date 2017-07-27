@@ -1,0 +1,59 @@
+.sub .item{
+    padding: 30rpx;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    background-color: #fff; 
+}
+.sub .text .item-value{
+    font-size: 28rpx;
+    padding: 0;
+    margin: 0;
+    line-height: 28rpx;
+    
+}
+.sub .tel{
+  background-color: #fff;
+  padding: 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+
+.sub .text{
+    padding: 20rpx 0rpx 8rpx 24rpx;
+}
+
+.sub .text .item-name{
+    font-weight: 400;
+    white-space: nowrap;
+    width: 120rpx;
+    margin-right: 40rpx;
+    font-size:30rpx;
+    color: #333;
+}
+.submit{
+    margin-top: 60rpx;   
+}
+
+.sub .item .item-area{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    height: 350rpx;
+    color: #1a1a1a;
+    width: 100%;
+}
+.btn{
+    width: 700rpx;
+    height: 92rpx;
+    background-color: #0a95ff;
+    border-radius: 12rpx;
+    color: #ffffff;
+    font-size: 38rpx;
+    text-align: center;
+    line-height: 92rpx;
+    margin-left: 25rpx;
+}
+.other-button-hover{
+  background-color: #098aed;
+}

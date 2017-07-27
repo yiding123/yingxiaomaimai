@@ -1,0 +1,72 @@
+{
+  "pages": [
+    
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/reg/reg",
+    "pages/chooseplace/chooseplace",
+    "pages/group/group",
+    "pages/describe/describe",
+    "pages/mine/mine",
+    "pages/recommend/recommend",
+    "pages/searchresult/searchresult",
+    "pages/searchnoresult/searchnoresult",
+    "pages/contacts/contacts",
+    "pages/my/my",
+    "pages/access/access",
+    "pages/search/search",
+    "pages/details/details",
+    "pages/plusgroup/plusgroup",
+    "pages/mine/change/chgnickname/chgnickname",
+    "pages/mine/change/wxid/wxid",
+    "pages/mine/change/company/company",
+    "pages/mine/change/industry/industry",
+    "pages/mine/change/cooperation/cooperation",
+    "pages/mine/change/provide/provide",
+    "pages/mine/change/need/need",
+    "pages/mine/change/mylocation/mylocation",
+    "pages/mine/change/job/job",
+    "pages/mine/change/tel/tel",
+    "pages/mine/change/tag/tag",
+    "pages/mine/change/address/address",
+    "pages/follower/follower"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#008cec",
+    "navigationBarTitleText": "营销脉脉",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#0fafff",
+    "backgroundColor": "#FFF",
+    "borderStyle": "#d5d5d5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "资源",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/contacts/contacts",
+        "text": "人脉",
+        "iconPath": "images/contacts.png",
+        "selectedIconPath": "images/contacts_focus.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "images/burger.png",
+        "selectedIconPath": "images/burger_focus.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000,
+    "downloadFile": 15000
+  },
+  "debug": true
+}

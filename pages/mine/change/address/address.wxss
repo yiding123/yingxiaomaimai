@@ -1,0 +1,17 @@
+.sub .item{
+    padding: 30rpx 24rpx;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    background-color: #fff; 
+    margin-top: 20rpx;
+}
+.sub .item .item-value{
+    font-size: 30rpx;
+}
+
+.submit{  
+  margin-top: 60rpx;
+}
+.other-button-hover{
+  background-color: #098aed;
+}

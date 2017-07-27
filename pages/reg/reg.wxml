@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="border"></view>
+  <form bindsubmit="doRequest">
+    <view class="base">
+      <!-- 头像 -->
+      <image src="{{userinfo.avatarUrl?userinfo.avatarUrl:userinfo.avatar}}" class="avatar"></image>
+      <input type="text" hidden="true" name="avatarUrl" value="{{userinfo.avatarUrl?userinfo.avatarUrl:userinfo.avatar}}" />
+      <view style="display:flex; flex-direction:column">
+        <!-- 昵称 -->
+        <view class="item-hq ipt">
+          <view class="item-name">
+            <text>昵称</text>
+            <image src="../../images/must.png"></image>
+          </view>
+          <input type="text" name="name" maxlength="8" value="{{userinfo.nickName}}" />
+        </view>
+        <!-- 微信号 -->
+        <view class="item-hq">
+          <view class="item-name">
+            <text>微信号</text>
+            <image src="../../images/must.png"></image>
+          </view>
+          <input type="text" name="wxid" maxlength="20" value="{{userinfo.wxid}}" placeholder="微信号" />
+        </view>
+      </view>
+    </view>
+    <view class="border"></view>
+    <view class="sub">
+
+      <picker value="{{selectedSexIndex}}" range="{{sexRange}}" bindchange="sexPickerBindchange">
+        <view class="item">
+          <text class="item-name">性别</text>
+          <text class="item-value">{{sexRange[selectedSexIndex]}}</text>
+        </view>
+      </picker>
+      <picker mode="date" value="{{dateValue}}" start="1959-01-01" end="2010-12-12" bindchange="datePickerBindchange">
+        <view class="item">
+          <text class="item-name">出生日期</text>
+          <text class="item-value">{{dateValue}}</text>
+        </view>
+      </picker>
+      <view class="border"></view>
+
+      <!-- 自我描述 -->
+      <view class="item">
+        <text class="item-name">个人标签</text>
+        <input name="tag" placeholder="多个标签用空格分隔" />
+      </view>
+
+    </view>
+
+    <!-- 提交 -->
+    <view class="submit">
+      <button class="btn" hover-class="other-button-hover" formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">提交名片</button>
+    </view>
+  </form>
+</view>

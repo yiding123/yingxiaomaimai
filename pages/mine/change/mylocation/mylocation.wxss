@@ -1,0 +1,52 @@
+.place-title{
+  font-size: 26rpx;
+  color: #999999;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 24rpx;
+}
+
+.place{
+  background-color: #ffffff;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+  margin:2rpx 0 3rpx 0;
+}
+
+.place .location-icon{
+  align-items: center;
+ 
+}
+
+.place image{
+  width: 20rpx;
+  height: 25rpx;
+  align-items: center;
+
+}
+
+.place text{
+  font-size: 30rpx;
+  align-items: center;
+  margin-left: 10rpx;
+  color: #00a8fc;
+}
+
+.place .choose-btn{
+  color: #1a1a1a;
+ 
+}
+
+.main{
+ 
+  padding: 0 20rpx;
+  background-color: #ffffff;
+}
+
+.column{
+  margin: 0 20rpx;
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #f2f2f2;
+}

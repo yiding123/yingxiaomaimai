@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<import src="../template/recommend/recommend-templ.wxml" />
+<import src="../template/useritem/useritem.wxml" />
+
+
+<!-- search -->
+<view class="search" bindtap="bindSearchNavigate">
+  <view class="search-center">
+    <icon class="session-search-icon" type="search" size="12"></icon>
+    <text class="search-placeholder">搜索资源</text>
+  </view>
+</view>
+<view class="container">
+  <view class="page-session page-session-spacing">
+    <view class="recommend-item-content">
+      <scroll-view class="recommend-scroll" scroll-x="true">
+        <block wx:for="{{recommendation}}" wx:for-item="item" wx:key="id">
+          <template is="recommend-template" data="{{...item}}" />
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="bar"></view>
+  <view class="section">
+    <navigator hover-class="navigator-hover" wx:for="{{feed}}" wx:for-item="item" wx:key="id">
+      <template is="useritem-templ" data="{{...item}}"></template>
+    </navigator>
+    <view class="end" hidden="{{showtips}}">
+      <text>{{tips}}</text>
+    </view>
+  </view>
+</view>

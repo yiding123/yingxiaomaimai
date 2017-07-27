@@ -1,0 +1,117 @@
+<view class="container">
+  <view class="border"></view>
+    <view class="base">
+      <view>
+        <!-- 昵称 -->
+        <view class="item-hq ipt" catchtap="changeNickName">
+          <text class="item-name">昵称</text>
+          <text class="item-value">{{user.nickName}}</text>
+        </view>
+        <!-- 微信号 -->
+        <view class="item-hq wxh" url="change/wxid/wxid">
+          <text class="item-name">微信号</text>
+          <text class="item-value">{{user.wxid}}</text>
+        </view>
+      </view>
+
+      <!-- 头像 -->
+      <image src="{{user.avatarUrl?user.avatarUrl:user.avatar}}" class="avatar"></image>
+      <input type="text" hidden="true" name="id" value="{{user.id}}" />
+      <input type="text" hidden="true" name="avatarUrl" value="{{user.avatarUrl?user.avatarUrl:user.avatar}}" />
+
+    </view>
+    <view class="border"></view>
+    <view class="sub">
+
+      <picker value="{{selectedSexIndex}}" range="{{sexRange}}" bindchange="sexPickerBindchange">
+        <view class="item">
+          <text class="item-name">性别</text>
+          <text class="item-value">{{sexRange[selectedSexIndex]}}</text>
+        </view>
+      </picker>
+
+      <picker mode="date" value="{{dateValue}}" start="1959-01-01" end="2010-12-12" bindchange="datePickerBindchange">
+        <view class="item">
+          <text class="item-name">出生日期</text>
+          <text class="item-value">{{dateValue}}</text>
+        </view>
+      </picker>
+
+      <navigator class="item" url="change/tag/tag">
+        <text class="item-name">个人描述</text>
+        <view class="item-value">
+          <view class="tags" wx:for="{{tag}}" wx:key="id">{{item}}</view>
+        </view>
+      </navigator>
+      <navigator class="item" style="border:none;" url="change/tel/tel">
+        <text class="item-name">手机号</text>
+        <text class="item-value">{{user.phone}}</text>
+      </navigator>
+      <view class="border"></view>
+
+      <!-- 行业 -->
+      <navigator class="item" url="change/industry/industry">
+        <text class="item-name">行业</text>
+        <text class="item-value">{{user.industry}}</text>
+      </navigator>
+
+      <!-- 公司 -->
+      <navigator class="item" url="change/company/company">
+        <text class="item-name">公司</text>
+        <text class="item-value">{{user.com}}</text>
+      </navigator>
+
+      <!-- 职务 -->
+      <navigator class="item" style="border:none;" url="change/job/job">
+        <text class="item-name">职务</text>
+        <text class="item-value">{{user.job}}</text>
+      </navigator>
+      <view class="border"></view>
+
+
+      <!-- 我的位置 -->
+      <navigator class="item" url="change/address/address">
+        <text class="item-name">我的位置</text>
+        <text class="item-value">{{user.address}}</text>
+      </navigator>
+
+      <!-- 我能提供 -->
+      <navigator class="item" url="change/provide/provide">
+        <text class="item-name">我能提供</text>
+        <text class="item-value">{{user.support}}</text>
+      </navigator>
+
+      <!-- 我需要 -->
+      <navigator class="item" url="change/need/need">
+        <text class="item-name">我需要</text>
+        <text class="item-value">{{user.need}}</text>
+      </navigator>
+
+
+      <!-- 关于合作 -->
+      <navigator class="item" url="change/cooperation/cooperation">
+        <text class="item-name">关于合作</text>
+        <text class="item-value">{{user.coperation}}</text>
+      </navigator>
+
+    </view>
+
+    <view class="tips-colomn">
+      <view class="tips flex-wrp">
+        <view class="tips-icon">
+          <icon type="info" size="10" color="{{item}}" />
+        </view>
+        <view>
+          <text>擦出火花的正确方式</text>
+        </view>
+      </view>
+      <view class="tips">
+        <text>点击右上角，分享给微信好友</text>
+      </view>
+    </view>
+
+    <!-- 转发 -->
+    <view class="btn-bottom">
+      <button class="btn" open-type="share" hover-class="other-button-hover" bindtap="share">分享名片</button>
+    </view>
+</view>

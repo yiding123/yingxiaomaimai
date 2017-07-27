@@ -1,0 +1,13 @@
+<view class="sub">
+    <form bindsubmit="add">
+        <view class="item">       
+            <input class="item-value" name="name" type="text" maxlength="8" placeholder="不能超过8个字"/>
+        </view>
+
+        <!-- 提交 -->
+        <view class="submit">
+            <button class="btn" hover-class="other-button-hover" formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">确定</button>
+        </view>
+
+    </form>
+</view>

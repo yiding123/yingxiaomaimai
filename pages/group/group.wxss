@@ -1,0 +1,50 @@
+.sub{
+    background-color: #fff; 
+    
+}
+
+.sub .item{
+    padding: 30rpx 0rpx;
+    margin: 0 30rpx;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.sub .item .item-name{
+    white-space: nowrap;
+    margin-right: 55rpx;
+    font-size:32rpx;
+}
+.sub .item .item-value input{
+    font-size: 26rpx;
+}
+
+
+.add_group{
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    border-top:#dedede 1rpx solid;
+    height: 120rpx;
+    margin-top: 40rpx;  
+}
+.add_group image{
+    width:42rpx;
+    height:42rpx;
+    margin-top: 39rpx;
+    align-items: center;
+}
+
+.add_group .add_text{ 
+    align-items: center;  
+    margin-left: 16rpx;
+    font-size: 34rpx; 
+    line-height: 120rpx;  
+    color: #0a95ff;   
+}
+
+.userinfo{
+    height: 493px;
+    background-color: #fff; 
+}

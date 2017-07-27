@@ -1,0 +1,12 @@
+<view class="container">
+<!-- 已选择 -->
+    <view class="border"></view>
+    <view class="choosed flex-wrp">
+        <text>{{industry}}</text>
+        <text class="choosed-tip">已选择</text>
+    </view>
+<!-- 行业列表 -->    
+    <block wx:for="{{industries}}" wx:for-item="item">
+<navigator class="main" bindtap="changeIndustry" id="{{item}}"><view class="column">{{item}}</view></navigator>
+    </block>
+</view>

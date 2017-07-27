@@ -1,0 +1,14 @@
+<view class="sub">
+    <form bindsubmit="add">
+        <view class="item">       
+            <textarea name="need" class="item-area" maxlength="150" placeholder="我需要什么" value="{{need}}" />
+        </view>
+<!--提醒-->
+        <!--<view class="warn-title"><text>最多支持150字输入，您已达上限！</text></view>-->
+        <!-- 提交 -->
+        <view class="submit">
+            <button class="btn" hover-class="other-button-hover" formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">提交</button>
+        </view>
+
+    </form>
+</view>

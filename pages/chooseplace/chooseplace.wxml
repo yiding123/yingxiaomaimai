@@ -1,0 +1,25 @@
+<view class="container">
+<!-- 已选择 -->
+    <view class="border"></view>
+    <view class="choosed flex-wrp">
+        <text>武汉</text>
+        <text class="choosed-tip">已选择</text>
+    </view>
+<!-- 地区列表 -->      
+        <navigator class="main"><view class="column">恩施</view> </navigator>
+        <navigator class="main"><view class="column">鄂州</view></navigator>
+        <navigator class="main"><view class="column">黄冈</view></navigator>
+        <navigator class="main"><view class="column">黄石</view></navigator>
+        <navigator class="main"><view class="column">荆门</view></navigator>
+        <navigator class="main"><view class="column">荆州</view></navigator>
+        <navigator class="main"><view class="column">潜江</view></navigator>
+        <navigator class="main"><view class="column">神农架</view></navigator>
+        <navigator class="main"><view class="column">十堰</view></navigator>
+        <navigator class="main"><view class="column">随州</view></navigator>
+        <navigator class="main"><view class="column">天门</view></navigator>
+        <navigator class="main"><view class="column">孝感</view></navigator>
+        <navigator class="main"><view class="column">咸宁</view></navigator>
+        <navigator class="main"><view class="column">仙桃</view></navigator>
+        <navigator class="main"><view class="column">襄阳</view></navigator>
+        <navigator class="main"><view class="column">宜昌</view></navigator>            
+</view>

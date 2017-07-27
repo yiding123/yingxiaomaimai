@@ -1,0 +1,28 @@
+<view class="container">
+<!-- 当前位置 -->
+    <view class="place-title"><text>当前位置</text></view>
+    <view class="place flex-wrp">
+        <view class="location-icon"><image src="../../images/location.png"></image></view>
+        <view><text>湖北</text></view>
+        <view><text>武汉</text></view>
+    </view>
+   
+<!-- 选择位置 -->
+    <view class="place-title"><text>选择位置</text></view>
+    <view class="place" style="margin-bottom:20rpx;" catchtap="chooseplace">
+        <text class="choose-btn">请选择</text>
+    </view>   
+
+<!-- 地区列表 -->  
+    <navigator class="main"><view class="column">保定</view> </navigator>
+    <navigator class="main"><view class="column">承德</view> </navigator>
+    <navigator class="main"><view class="column">沧州</view> </navigator>
+    <navigator class="main"><view class="column">衡水</view> </navigator>
+    <navigator class="main"><view class="column">廊坊</view> </navigator>
+    <navigator class="main"><view class="column">秦皇岛</view> </navigator>
+    <navigator class="main"><view class="column">石家庄</view> </navigator>
+    <navigator class="main"><view class="column">唐山</view> </navigator>
+    <navigator class="main"><view class="column">邢台</view> </navigator>
+    <navigator class="main"><view class="column">张家口</view> </navigator>
+     
+</view>

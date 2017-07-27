@@ -1,0 +1,107 @@
+<scroll-view class="userinfo" scroll-y="true">
+  <view class="border"></view>
+  <form bindsubmit="doRequest">
+    <view class="base flex-wrp">
+      <!-- 头像 -->
+      <image src="{{user.avatarUrl}}" class="avatar"></image>
+      <view class="info">
+        <view class="text-row flex-wrp">
+          <view class="text-yh">
+            <text>{{user.nickName}}</text>
+          </view>
+          <view class="text-zw flex-wrp">
+            <image src="../../images/zhiwei.png"></image>
+            <text>{{user.job}}</text>
+          </view>
+        </view>
+        <view class="text-xb flex-wrp">
+          <block wx:if="{{user.sex}}">
+          <text>{{user.sex}},</text>
+          </block>
+          <block wx:if="{{user.age}}">
+          <text>{{user.age}}岁</text>
+          </block>
+        </view>
+      </view>
+      <view></view>
+    </view>
+    <view class="border"></view>
+    <view class="sub">
+      <view class="item item-padding">
+        <text class="item-name">个人描述</text>
+        <view class="item-value">
+          <view class="tags" wx:for="{{tag}}" wx:if="{{item != ''}}">
+          {{item}}
+          </view>
+        </view>
+      </view>
+      <view class="item" style="border:none;">
+        <text class="item-name">微信号</text>
+        <text class="item-main textwidth" selectable="true">{{user.wxid}}</text>
+        <text class="care" catchtap="copyWxid">复制到手机</text>
+      </view>
+
+      <view class="border"></view>
+      <!-- 行业 -->
+      <view class="item">
+        <text class="item-name">行业</text>
+        <text class="item-main">{{user.industry}}</text>
+      </view>
+      <!-- 公司 -->
+      <view class="item">
+        <text class="item-name">公司</text>
+        <text class="item-main">{{user.com}}</text>
+      </view>
+      <!-- 职务 -->
+      <view class="item" style="border:none;">
+        <text class="item-name">职务</text>
+        <text class="item-main">{{user.job}}</text>
+      </view>
+
+      <view class="border"></view>
+      <!-- 位置 -->
+      <view class="item">
+        <text class="item-name">位置</text>
+        <text class="item-main">{{user.address}}</text>
+      </view>
+      <!-- 我能提供 -->
+      <view class="item">
+        <text class="item-name">我能提供</text>
+        <text class="item-main">{{user.support}}</text>
+      </view>
+      <!-- 我感兴趣 -->
+      <view class="item">
+        <text class="item-name">我需要</text>
+        <text class="item-main">{{user.need}}</text>
+      </view>
+      <!-- 更多介绍 -->
+      <view class="item">
+        <text class="item-name">更多介绍</text>
+        <text class="item-main">{{user.des}}</text>
+      </view>
+      <!-- 关于合作 -->
+      <view class="item">
+        <text class="item-name">关于合作</text>
+        <text class="item-main">{{user.coperation}}</text>
+      </view>
+    </view>
+
+    <view class="tips-colomn">
+      <view class="tips flex-wrp">
+        <view class="tips-icon">
+          <icon type="info" size="10" color="{{item}}" />
+        </view>
+        <view>
+          <text>擦出火花的正确方式</text>
+        </view>
+      </view>
+      <view class="tips">
+        <text>点击右上角，分享给微信好友</text>
+      </view>
+      <!--<view class="tips">再次使用，发现-小程序-搜索“营销脉脉”</view>-->
+    </view>
+      <view class="btn-bottom">
+        <button class="btn" hover-class="other-button-hover" hidden="{{needShowAddGrpBtn}}" disabled="{{submit}}" data-id="{{user.id}}" bindtap="add">收藏</button>
+      </view>
+  </form>
+</scroll-view>

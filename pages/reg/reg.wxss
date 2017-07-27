@@ -1,0 +1,107 @@
+.userinfo{
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+.border{
+    height: 20rpx;
+    background-color: #f7f7f7;
+    border-top: 1rpx #f2f2f2 solid;
+    border-bottom: 1rpx #f2f2f2 solid;
+}
+
+.base{
+    display: flex;
+    background-color: #fff;
+    height: 148rpx;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 10rpx 0;
+}
+
+.base input{
+    font-size: 30rpx;
+    color: #888888;
+}
+
+.item-hq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:570rpx;
+    height: 74rpx;
+}
+
+.item-name image{
+    width: 8rpx;
+    height: 8rpx;
+    margin-left: 2rpx; 
+    margin-bottom:20rpx;
+}
+
+.ipt{ 
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.avatar{
+    width:120rpx;
+    height: 120rpx;
+    margin: 14rpx 30rpx
+}
+
+.sub{
+    background-color: #fff; 
+}
+
+.sub .item{
+    padding: 30rpx;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.sub .item .item-name{
+    white-space: nowrap;
+    width: 150rpx;
+    font-size:30rpx;
+    align-items: center;
+}
+.sub .item .item-value{
+    font-size: 30rpx;
+    color: #888;
+    align-items: center;
+}
+.submit{  
+  margin-top: 60rpx;
+}
+.other-button-hover{
+  background-color: #098aed;
+}
+
+.item-value .tags{
+  font-size: 26rpx;
+  color: #888888;
+  padding: 7rpx 20rpx;
+  border: 1rpx solid #cccccc;
+  border-radius: 42rpx;
+  margin-right: 20rpx;
+}
+.myitem-icon{
+  width: 16rpx;
+  height: 25rpx;
+  align-items: center;
+ 
+}
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-hq .item-name{
+  width:160rpx;
+  margin-right: 16rpx;
+}
+
+

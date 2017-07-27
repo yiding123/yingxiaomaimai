@@ -1,0 +1,134 @@
+.manage{
+    margin-bottom: 20rpx;
+    width: 702rpx;
+    padding: 30rpx 24rpx;
+    font-size: 30rpx;
+}
+.manage-hd{
+    height: 50rpx;
+    line-height: 50rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15rpx;
+}
+
+.manage-title{
+    font-weight: 400;
+    margin-bottom: 10rpx;
+    font-size: 34rpx;
+    color: #666;
+}
+
+.manage-tips{
+    font-weight: 300;
+    font-size: 30rpx;
+    padding: 0 10rpx;
+    float: right;
+    color:#888888;
+}
+
+.manage-tag{
+    line-height: 42rpx;
+    font-size: 26rpx;
+    padding: 7rpx 20rpx;
+    height: 42rpx;
+    border: 1px solid #666;
+    border-radius: 40rpx;
+    color:#333;
+    display: inline-block;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+}
+
+.active{
+    color:#ff3626;
+    border-color: #ff3626;
+}
+
+.btn-control{
+    padding: 10px;
+    width: 99%;
+}
+.btn-control-mini{
+    margin-bottom: 20rpx;
+    font-size: 26rpx;
+}
+
+.searchfor{
+  display: flex;
+  height: 56rpx;
+  padding: 16rpx 30rpx;
+  background: #008cec;
+  justify-content: space-between;
+}
+.search-inp{
+  background: #ffffff;
+  border-radius: 40rpx;
+  line-height: 26rpx;
+  height: 56rpx;
+  font-size: 26rpx; 
+  display: flex;
+  justify-content:flex-start;
+  margin-right: 20rpx;
+  width:100%;
+}
+.searchfor .search-inp input{
+   font-size: 24rpx; 
+   height: 56rpx;
+   line-height: 56rpx;  
+   align-items: center;
+   width: 100%;
+  
+}
+
+.container .searchfor .ser-btn{
+    display: flex;
+    justify-content: center;
+    width: 118rpx; 
+    height: 56rpx;
+    padding: 0;
+    margin: 0;
+    line-height: 56rpx;      
+    background-color: #ffffff;
+    border-radius: 40rpx;   
+    font-size: 28rpx;
+    color: #333;
+    background: #ffffff;   
+    border: none;   
+}
+
+.other-button-hover{
+    background-color: #cbcbcb;
+}
+/*.position{
+  width: 118rpx;
+  height: 24rpx;
+  padding: 16rpx 0;
+  margin-right: 20rpx;
+  background-color: #ffffff;
+  border-radius: 40rpx;
+  display:flex;
+  justify-content: center;
+}
+
+.search-position{
+  color: #888888;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  align-items: center;  
+  margin-right: 9rpx;
+}
+
+.position image{
+    width: 18rpx;
+    height: 11rpx;
+    margin-top: 7rpx;
+}*/
+
+.search-inp .session-search-icon{
+  color: #888888;
+  margin: 16rpx 0;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  align-items: center;
+}

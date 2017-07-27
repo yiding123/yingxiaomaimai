@@ -1,0 +1,16 @@
+<view>
+  <scroll-view class="userinfo" scroll-y="true" style="height:{{scroll_height}}px">
+    <view class="sub">
+      <navigator hover-class="navigator-hover" class="item" wx:for="{{groups}}" id="{{item.id}}" catchtap="select">
+        <view class="item-name">{{item.groupname}}</view>
+      </navigator>
+    </view>
+  </scroll-view>
+
+  <view class="add_group flex-wrp" catchtap="add">
+    <image src="../../images/add.png"></image>
+    <view class="add_text">
+      <text>添加分组</text>
+    </view>
+  </view>
+</view>

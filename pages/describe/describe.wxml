@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="checked">
+    <view class="tags-all tags-selected"><text>微商</text></view>
+    <view class="tags-all tags-selected"><text>媒体</text></view>
+    <view class="tags-all tags-selected">
+        <text>生鲜</text>
+        <image src="../../images/delete-icon.png"></image>
+    </view>
+    <view class="tags-all" style="color:#999;">添加标签</view> 
+    <!--<input class="tags-all" placeholder="添加标签" type="text" maxlength="15" bindinput> </input>     -->
+  </view>
+  
+  <text class="tag-title">标签库</text>
+  <view class="tags-box">
+      <view class="tags-all"><text>市场营销</text></view>
+      <view class="tags-all"><text>商务工作</text></view>
+      <view class="tags-all"><text>业务销售</text></view>
+      <view class="tags-all"><text>渠道推广</text></view>
+      <view class="tags-all"><text>媒体广告资源</text></view>
+      <view class="tags-all"><text>客户好伙伴</text></view>
+      <view class="tags-all"><text>非稳定工作者</text></view>
+      <view class="tags-all"><text>创意达人</text></view>
+      <view class="tags-all tags-selected"><text>微商</text></view>
+      <view class="tags-all"><text>自营业主</text></view>
+      <view class="tags-all"><text>学生党求带</text></view>
+      <view class="tags-all"><text>喝茶</text></view>
+      <view class="tags-all"><text>追点子热癖</text></view>
+      <view class="tags-all"><text>执着</text></view>
+      <view class="tags-all"><text>单身待解救</text></view>
+      <view class="tags-all"><text>萌妹子</text></view>     
+      <view class="tags-all"><text>女汉子</text></view>
+      <view class="tags-all"><text>直率</text></view>
+      <view class="tags-all"><text>有趣</text></view>        
+  </view>
+</view>

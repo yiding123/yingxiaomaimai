@@ -1,0 +1,29 @@
+<view class="container">
+<!--浏览量 -->
+  <view class="eye-num" hidden="{{isHidden}}">
+    <text>今日浏览量：8<text class="eye-bj">总浏览量：756</text></text>
+  </view>
+<!--浏览量结束-->
+  <view class="eye-column">
+    <navigator hover-class="navigator-hover" wx:for="{{users}}" wx:for-item="user" data-id="{{user.id}}" bindtap="details" class="eye-profile flex-wrp">
+      <view class="eye-img"><image src="{{user.avatarUrl}}"></image></view>
+     
+      <view class="profile">
+          <view class="flex-wrp profile-text">
+              <view class="profile-yh"> <text>{{user.name}}</text> </view>
+              <view class="profile-zw flex-wrp">
+                  <image src="../../images/zhiwei.png"></image>
+                  <text>{{user.title}}</text> 
+              </view>
+          </view>          
+          <view class="profile-bq"> <text>{{user.tag}}</text> </view>           
+      </view>    
+      <view class="eye-time"> 
+          <text>{{user.date}}</text> 
+      </view>
+     
+    </navigator>
+  </view>
+
+</view>
+

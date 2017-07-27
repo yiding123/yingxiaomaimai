@@ -1,0 +1,13 @@
+<view class="sub">
+  <form bindsubmit="add">
+    <view class="item">
+      <input class="item-value" name="phone" type="text" maxlength="20" placeholder="输入常用的手机号" value="{{phone}}"/>
+    </view>
+
+    <!-- 提交 -->
+    <view class="submit">
+      <button class="btn" hover-class="other-button-hover" formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">保存</button>
+    </view>
+
+  </form>
+</view>

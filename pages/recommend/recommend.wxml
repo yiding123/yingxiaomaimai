@@ -1,0 +1,20 @@
+<view class="sub">
+  <form bindsubmit="submit">
+    <view class="text">
+      <text class="item-name">联系电话</text>
+    </view>
+    <view class="tel">
+        <!--<text class="item-name">联系电话</text>-->
+        <input class="item-value" name="phone" type="text" maxlength="20" placeholder="手机号" />
+      </view>
+    <view class="text">
+      <text class="item-name">推荐理由</text>
+    </view>
+    <view class="item">
+      <textarea name="reason" class="item-area" maxlength="150" placeholder="请输入推荐理由..." />
+    </view>
+    <view class="submit">
+      <button class="btn" hover-class="other-button-hover" formType="submit" loading="{{btnLoading}}">提交</button>
+    </view>
+  </form>
+</view>
